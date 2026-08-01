@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eren Kural</title>
-  <meta name="description" content="Eren Kural — projects, papers &amp; talks, blog.">
+  <title>Blog — Eren Kural</title>
+  <meta name="description" content="Writing by Eren Kural.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { darkMode: "media" };
@@ -18,11 +18,11 @@
       <button id="nav-toggle" class="sm:hidden underline underline-offset-4 text-sm">Menu</button>
       <nav id="site-nav" class="hidden sm:block w-full sm:w-auto">
         <ul class="flex flex-col sm:flex-row gap-2 sm:gap-5 mt-4 sm:mt-0 list-none p-0 m-0 text-sm">
-          <li><a href="index.html" class="underline underline-offset-4">Home</a></li>
+          <li><a href="index.html" class="hover:underline underline-offset-4">Home</a></li>
           <li><a href="projects.html" class="hover:underline underline-offset-4">Projects</a></li>
           <li><a href="music.html" class="hover:underline underline-offset-4">Music</a></li>
           <li><a href="publications.html" class="hover:underline underline-offset-4">Papers &amp; Talks</a></li>
-          <li><a href="blog.html" class="hover:underline underline-offset-4">Blog</a></li>
+          <li><a href="blog.html" class="underline underline-offset-4">Blog</a></li>
           <li><a href="awards.html" class="hover:underline underline-offset-4">Awards</a></li>
           <li><a href="volunteering.html" class="hover:underline underline-offset-4">Volunteering</a></li>
         </ul>
@@ -32,42 +32,32 @@
 
   <main class="max-w-[72rem] mx-auto px-5 py-12">
 
-    <section class="flex flex-col sm:flex-row gap-8 items-start">
-      <img
-        src="assets/images/eren-portrait.jpg"
-        alt="Eren Kural"
-        class="w-40 h-40 sm:w-48 sm:h-48 object-cover shrink-0">
-      <div>
-        <h1 class="text-3xl font-bold">Eren Kural</h1>
-        <p class="text-gray-600 dark:text-gray-400 mt-1">Lorem ipsum dolor sit amet.</p>
-
-        <!-- TODO: personalize this bio -->
-        <p class="mt-6 max-w-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
+    <section>
+      <h1 class="text-3xl font-bold">Blog</h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
     </section>
 
+    <!--
+      Post entry structure to use once there are real posts (link to a file under /blog/):
+
+      <li class="p-8">
+        <div class="flex items-baseline justify-between gap-2 flex-wrap">
+          <h3 class="font-semibold text-lg">Post title</h3>
+          <span class="text-xs text-gray-600 dark:text-gray-400">Month Year</span>
+        </div>
+        <p class="mt-2">One or two sentence excerpt.</p>
+        <p class="mt-3 text-sm">
+          <a href="blog/post-slug.html" class="underline underline-offset-4">Read more &rarr;</a>
+        </p>
+      </li>
+    -->
+
     <section class="mt-10">
-      <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0 text-sm">
-        <li>
-          <a href="https://github.com/EReeeN1208" class="underline underline-offset-4 hover:no-underline">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4 hover:no-underline">
-            Spotify
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/eren-kural-40b5272aa/" class="underline underline-offset-4 hover:no-underline">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+      <div class="p-10 text-gray-600 dark:text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
     </section>
 
   </main>
