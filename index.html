@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eren Kural</title>
-  <meta name="description" content="Eren Kural — projects, papers &amp; talks, blog.">
+  <meta name="description" content="Eren Kural - projects, music, papers &amp; talks, awards &amp; test scores, volunteering.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { darkMode: "media" };
@@ -12,19 +12,18 @@
 </head>
 <body class="bg-white text-black dark:bg-neutral-900 dark:text-white antialiased">
 
-  <header class="border-b border-black dark:border-white">
+  <header class="sticky top-0 z-50 bg-white dark:bg-neutral-900 border-b border-black dark:border-white">
     <div class="max-w-[72rem] mx-auto px-5 py-5 flex items-center justify-between flex-wrap gap-4">
-      <a href="index.html" class="font-bold tracking-wide text-lg no-underline">Eren Kural</a>
+      <a href="#home" class="font-bold tracking-wide text-lg no-underline">Eren Kural</a>
       <button id="nav-toggle" class="sm:hidden underline underline-offset-4 text-sm">Menu</button>
       <nav id="site-nav" class="hidden sm:block w-full sm:w-auto">
         <ul class="flex flex-col sm:flex-row gap-2 sm:gap-5 mt-4 sm:mt-0 list-none p-0 m-0 text-sm">
-          <li><a href="index.html" class="underline underline-offset-4">Home</a></li>
-          <li><a href="projects.html" class="hover:underline underline-offset-4">Projects</a></li>
-          <li><a href="music.html" class="hover:underline underline-offset-4">Music</a></li>
-          <li><a href="publications.html" class="hover:underline underline-offset-4">Papers &amp; Talks</a></li>
-          <li><a href="blog.html" class="hover:underline underline-offset-4">Blog</a></li>
-          <li><a href="awards.html" class="hover:underline underline-offset-4">Awards</a></li>
-          <li><a href="volunteering.html" class="hover:underline underline-offset-4">Volunteering</a></li>
+          <li><a href="#home" class="hover:underline underline-offset-4">Home</a></li>
+          <li><a href="#projects" class="hover:underline underline-offset-4">Projects</a></li>
+          <li><a href="#music" class="hover:underline underline-offset-4">Music</a></li>
+          <li><a href="#publications" class="hover:underline underline-offset-4">Papers &amp; Talks</a></li>
+          <li><a href="#awards" class="hover:underline underline-offset-4">Awards &amp; Test Scores</a></li>
+          <li><a href="#volunteering" class="hover:underline underline-offset-4">Volunteering</a></li>
         </ul>
       </nav>
     </div>
@@ -32,42 +31,583 @@
 
   <main class="max-w-[72rem] mx-auto px-5 py-12">
 
-    <section class="flex flex-col sm:flex-row gap-8 items-start">
-      <img
-        src="assets/images/eren-portrait.jpg"
-        alt="Eren Kural"
-        class="w-40 h-40 sm:w-48 sm:h-48 object-cover shrink-0">
-      <div>
-        <h1 class="text-3xl font-bold">Eren Kural</h1>
-        <p class="text-gray-600 dark:text-gray-400 mt-1">Lorem ipsum dolor sit amet.</p>
+    <!-- Home -->
+    <section id="home" class="scroll-mt-24">
+      <div class="flex flex-col sm:flex-row gap-8 items-start">
+        <img
+          src="assets/images/eren-portrait.jpg"
+          alt="Eren Kural"
+          class="w-40 h-40 sm:w-48 sm:h-48 object-cover shrink-0">
+        <div>
+          <h1 class="text-3xl font-bold">Eren Kural</h1>
+          <p class="text-gray-600 dark:text-gray-400 mt-1">Lorem ipsum dolor sit amet.</p>
 
-        <!-- TODO: personalize this bio -->
-        <p class="mt-6 max-w-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <!-- TODO: personalize this bio -->
+          <p class="mt-6 max-w-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0 text-sm">
+          <li>
+            <a href="https://github.com/EReeeN1208" class="underline underline-offset-4 hover:no-underline">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4 hover:no-underline">
+              Spotify
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/eren-kural-40b5272aa/" class="underline underline-offset-4 hover:no-underline">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
+      <h2 class="text-3xl font-bold">Projects</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-1">
+        <!---Lorem ipsum dolor sit amet, consectetur adipiscing elit. See more on
+        <a href="https://github.com/EReeeN1208" class="underline underline-offset-4">GitHub</a>.--->
+      </p>
+
+      <div class="mt-5r">
+        <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">3 Axis CNC Router</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">August 2026</span>
+            </div>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://cad.onshape.com/documents/79704e191795b1d4f31f1f1b/w/a1067c9624c8b593191896d3/e/e75da6a2f01d70fc04d6cb6f?renderMode=0&amp;uiState=6a6f44e6f86a65149ecec004" class="underline underline-offset-4">
+                View on Onshape &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">2 Axis CNC Pen Plotter</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">June 2026</span>
+            </div>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://cad.onshape.com/documents/368c8b133bf62c444bd6feb7/w/76279ecd67078c0e353e39e9/e/867fe40cc83e4253ae53fd8d?renderMode=0&amp;uiState=6a6f8339f86a65149ecfd935" class="underline underline-offset-4">
+                View on Onshape &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Physics-Engine</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2026</span>
+            </div>
+            <p class="mt-2">
+              Programmed a 3-dimensional, iterative, rigid-body physics engine capable of simulating force based interactions in real time for my L11 yearly homework project in Physics C.
+            </p>
+            <p class="mt-3 text-sm">
+              <a href="https://github.com/EReeeN1208/physics-engine" class="underline underline-offset-4 mr-6">
+                View on GitHub &#8599;
+              </a>
+              <a href="https://docs.google.com/document/d/1-VeoJuHSQ7GWLWL-izthWQovO3JWefOeVj8q2QPN5bs" class="underline underline-offset-4 mr-6">
+                Associated paper &#8599;
+              </a>
+              <a href="https://www.youtube.com/watch?v=2cIjbjXMatc" class="underline underline-offset-4 mr-6">
+                Video Demonstration &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">2W Solid State Guitar Amp</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2026</span>
+            </div>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://cad.onshape.com/documents/999784bf0842f111c0194a6c/w/e1ec82b17a028736dfd4ced0/e/0a82d776305cc18849ed284b?renderMode=0&amp;uiState=6a6f3014261d3953b1e0ffa5" class="underline underline-offset-4">
+                View on Onshape &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">nasARC</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">October 2025</span>
+            </div>
+            <p class="mt-2">Finalist at the NASA Space Apps Challenge Hackathon Istanbul.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://www.spaceappschallenge.org/2025/find-a-team/arc15/?tab=project" class="underline underline-offset-4">
+                View Project &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Neural-Network-C</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">September 2025</span>
+            </div>
+            <p class="mt-2">Programmed a convolution neural network framework for MNIST10 classification using pure C.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://github.com/EReeeN1208/neural-network-C" class="underline underline-offset-4">
+                View on GitHub &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">MineCweeper</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">June 2025</span>
+            </div>
+            <p class="mt-2">Programmed Classic minesweeper in C using raylib</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <img src="assets/images/projects/mineCweeper/menu.png" alt="MineCweeper menu screen" class="w-full h-auto rounded-lg">
+              <img src="assets/images/projects/mineCweeper/game.png" alt="MineCweeper gameplay" class="w-full h-auto rounded-lg">
+              <img src="assets/images/projects/mineCweeper/lose.png" alt="MineCweeper game over screen" class="w-full h-auto rounded-lg">
+            </div>
+            <p class="mt-3 text-sm">
+              <a href="https://github.com/EReeeN1208/MineCweeper" class="underline underline-offset-4">
+                View on GitHub &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">ARCade</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">April 2025</span>
+            </div>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Dragonscout</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">January 2025</span>
+            </div>
+            <p class="mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="mt-3 text-sm">
+              <a href="https://github.com/ARC6014/DragonScout-Issue-Board/wiki" class="underline underline-offset-4">
+                View on GitHub &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Arcinator</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">January 2024</span>
+            </div>
+            <p class="mt-2">Developed the backend for Arcinator, the worlds first free, publicly accessible FRC chatbot, using LangChain, Qdrant, FastAPI, and Pydantic. Within the first two years, Arcinator had 5000+ chats among 20+ countries. I have passed Arcinator on to my FRC team, and it is no longer directly maintained by me.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://chat.arc6014.com/" class="underline underline-offset-4">
+                Visit Arcinator &#8599;
+              </a>
+            </p>
+          </li>
+
+        </ul>
+
+        <p class="mt-8 text-sm">
+          <a href="https://github.com/EReeeN1208?tab=repositories" class="underline underline-offset-4">
+            More projects on GitHub &rarr;
+          </a>
         </p>
       </div>
     </section>
 
-    <section class="mt-10">
-      <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0 text-sm">
-        <li>
-          <a href="https://github.com/EReeeN1208" class="underline underline-offset-4 hover:no-underline">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4 hover:no-underline">
-            Spotify
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/eren-kural-40b5272aa/" class="underline underline-offset-4 hover:no-underline">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+    <!-- Music -->
+    <section id="music" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
+      <h2 class="text-3xl font-bold">Music</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-1">
+        <!---Lorem ipsum dolor sit amet, consectetur adipiscing elit, released on
+        <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4">Spotify</a>.--->
+      </p>
+
+      <!--
+        Album cover color palettes (user-provided, unordered):
+        Mavi Huzur: #19283B, #6E97AD, #DAE6E6, #97B1B1, #2D477A
+        Katastrofi: #F3F3F3, #000000, #1F1F1F, #514306, #411C02
+        Cıvata:     #FFFFFF, #252F34, #E884B8, #C37099, #A35C7C
+      -->
+
+      <div class="mt-5">
+        <!---<h3 class="text-xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2">Releases</h3>--->
+
+        <div class="mt-5 flex flex-col gap-5">
+
+          <!--
+            The Lion, the Witch and the Wardrobe: not yet released on Spotify,
+            so this card notes that and links a zip of all tracks instead of a
+            per-track download, sourced from assets/audio/LWAW/LWAW.zip.
+          -->
+          <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#FFFFFF;">
+            <div
+              class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
+              style="background-image:url('assets/images/music/lwawCover.png');">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-black/40"></div>
+            <img
+              src="assets/images/music/lwawCover.png"
+              alt="The Lion, the Witch and the Wardrobe album cover"
+              class="relative w-56 h-56 shrink-0 object-cover">
+            <div class="relative w-full">
+              <div class="flex items-baseline justify-between gap-2 flex-wrap">
+                <h4 class="text-xl font-semibold">The Lion, the Witch and the Wardrobe</h4>
+                <span class="text-xs text-gray-300">August 2026</span>
+              </div>
+              <p class="mt-2 text-sm text-gray-200">
+                Original soundtrack for RC Theatre Company’s rendition of The Lion, the Witch and the Wardrobe.
+              </p>
+              <h5 class="mt-4 text-l font-semibold">Tracks:</h5>
+              <ul class="mt-1 flex flex-col gap-1 text-sm" style="color:#FFFFFF;">
+                <li>Can't Go Back</li>
+                <li>Queen's Waltz</li>
+                <li>The Fall of Aslan</li>
+                <li>The Final Battle</li>
+                <li>Wolf Ritual</li>
+              </ul>
+              <div class="mt-4 flex items-center gap-4 text-sm">
+                <span>Spotify coming soon</span>
+                <a href="assets/audio/LWAW/LWAW.zip" download
+                  class="underline underline-offset-4">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            Card style modeled on Katastrofi's HearNow preview page
+            (https://hearnow.com/preview/kQrO5n%2F1eF6p2aQswemBbQ%3D%3D?cid=100):
+            a blurred, darkened blowup of the album art as an ambient backdrop
+            behind the crisp cover image, rather than a flat palette color.
+          -->
+          <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#F3F3F3;">
+            <div
+              class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
+              style="background-image:url('https://i.scdn.co/image/ab67616d0000b27350df48efccfca24207b00f21');">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-black/40"></div>
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b27350df48efccfca24207b00f21"
+              alt="Katastrofi album cover"
+              class="relative w-56 h-56 shrink-0 object-cover">
+            <div class="relative w-full">
+              <div class="flex items-baseline justify-between gap-2 flex-wrap">
+                <h4 class="text-xl font-semibold">Katastrofi</h4>
+                <span class="text-xs" style="color:#F3F3F3;">April 2026</span>
+              </div>
+              <p class="mt-2 text-sm" style="color:#F3F3F3;">
+                Instrumental metal song.
+              </p>
+              <div class="mt-4 flex items-center gap-4 text-sm">
+                <a href="https://open.spotify.com/track/7sn84WwNiz9O37OYOlJd8N"
+                  class="underline underline-offset-4" target="_blank" rel="noopener">View on Spotify</a>
+                <a href="assets/audio/Katastrofi/Katastrofi.mp3" download
+                  class="underline underline-offset-4">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            Card style modeled on Mavi Huzur's HearNow preview page
+            (https://hearnow.com/preview/g93nO6h4D8KJkf6DtRF4Bg%3D%3D?cid=100):
+            a blurred, darkened blowup of the album art as an ambient backdrop
+            behind the crisp cover image, rather than a flat palette color.
+          -->
+          <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#DAE6E6;">
+            <div
+              class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
+              style="background-image:url('https://i.scdn.co/image/ab67616d0000b27344516cb62b0e82d9085d364a');">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-black/40"></div>
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b27344516cb62b0e82d9085d364a"
+              alt="Mavi Huzur album cover"
+              class="relative w-56 h-56 shrink-0 object-cover">
+            <div class="relative w-full">
+              <div class="flex items-baseline justify-between gap-2 flex-wrap">
+                <h4 class="text-xl font-semibold">Mavi Huzur</h4>
+                <span class="text-xs" style="color:#97B1B1;">April 2024</span>
+              </div>
+              <p class="mt-2 text-sm" style="color:#97B1B1;">
+                My first instrumental composition.
+              </p>
+              <div class="mt-4 flex items-center gap-4 text-sm">
+                <a href="https://open.spotify.com/track/29H5sc2BI542Nxvu7PUicC"
+                  class="underline underline-offset-4" target="_blank" rel="noopener">View on Spotify</a>
+                <a href="assets/audio/MaviHuzur/Mavi%20Huzur.mp3" download
+                  class="underline underline-offset-4">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            Card style modeled on Cıvata's HearNow preview page
+            (https://hearnow.com/preview/MnQGg5hcIn2YxJp9kV76kw%3D%3D?cid=100):
+            a blurred, darkened blowup of the album art as an ambient backdrop
+            behind the crisp cover image, rather than a flat palette color.
+          -->
+          <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#FFFFFF;">
+            <div
+              class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
+              style="background-image:url('https://i.scdn.co/image/ab67616d0000b273d05528c685806bda0c96e512');">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-black/40"></div>
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273d05528c685806bda0c96e512"
+              alt="Cıvata album cover"
+              class="relative w-56 h-56 shrink-0 object-cover">
+            <div class="relative w-full">
+              <div class="flex items-baseline justify-between gap-2 flex-wrap">
+                <h4 class="text-xl font-semibold">Cıvata</h4>
+                <span class="text-xs" style="color:#E884B8;">March 2024</span>
+              </div>
+              <p class="mt-2 text-sm" style="color:#E884B8;">
+                Composed for my robotics team ARC6014. Featuring sounds sampled from the team workshop.
+              </p>
+              <div class="mt-4 flex items-center gap-4 text-sm">
+                <a href="https://open.spotify.com/track/4PptzO2UAjQyyWDaDbh6NP"
+                  class="underline underline-offset-4" target="_blank" rel="noopener">View on Spotify</a>
+                <a href="assets/audio/Civata/C%C4%B1vata.mp3" download
+                  class="underline underline-offset-4">Download</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Papers & Talks -->
+    <section id="publications" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
+      <h2 class="text-3xl font-bold">Papers &amp; Talks</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <div class="mt-10">
+        <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">Electromagnetic Induction in Guitar Pickups and Circuitry of a Guitar Amplifier</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">June 2026</span>
+            </div>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Physics C Seminar, Robert College</p>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://docs.google.com/presentation/d/1ubJJ3V-SHMHj1sXeNn7vWwLRbtTEP03tpp8YBXH4xOM/edit?slide=id.p#slide=id.p" class="underline underline-offset-4">
+                Slides &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">Programming and Evaluating a Classical Mechanics Simulation Engine</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2026</span>
+            </div>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L11)</p>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://docs.google.com/document/d/1-VeoJuHSQ7GWLWL-izthWQovO3JWefOeVj8q2QPN5bs/edit?tab=t.0#heading=h.dnq08xll55cs" class="underline underline-offset-4">
+                Read &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">Arc6014 Rookie2Rookie</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">February 2026</span>
+            </div>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robotics Team ARC6014</p>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img src="assets/images/talks/r2r_1.JPG" alt="Presenting the Rookie2Rookie talk to ARC6014" class="w-full h-auto rounded-lg">
+              <img src="assets/images/talks/r2r_2.JPG" alt="Presenting the Rookie2Rookie talk to ARC6014" class="w-full h-auto rounded-lg">
+            </div>
+            <p class="mt-3 text-sm">
+              <a href="assets/documents/Arc6014%20Rookie2Rookie.pdf" class="underline underline-offset-4">
+                Slides &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">The Mathematics of Music and Guitar</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2025</span>
+            </div>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L10)</p>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://docs.google.com/document/d/1hFqUPMfTRxshZHJUc7P3noau8k03qAGIdxbrxo2tPCE/edit?tab=t.0#heading=h.dnq08xll55cs" class="underline underline-offset-4">
+                Read &#8599;
+              </a>
+            </p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">Physics YHP Journal</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2024</span>
+            </div>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L9)</p>
+            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-3 text-sm">
+              <a href="https://docs.google.com/document/d/1gPLRpDaCyq_K6FvhgpFXhvoLttaNZvNVTQ5jgjHTlVo/edit?tab=t.0" class="underline underline-offset-4">
+                Read &#8599;
+              </a>
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700">
+
+      <div id="awards" class="scroll-mt-24">
+        <h3 class="text-xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2">Awards</h3>
+        <ul class="mt-5 flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">First Leadership Award Finalist</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Mar 2026</span>
+            </div>
+            <p class="mt-2">Awarded at the 2026 FRC Haliç Regional. Previously titled Dean's List Finalist.</p>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2">Test Scores</h3>
+        <ul class="mt-5 flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">AP Exams</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">2024 - 2026</span>
+            </div>
+            <ul class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 list-none p-0 m-0 text-sm">
+              <li class="flex justify-between gap-4">
+                <span>Calculus BC</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2026</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>English Literature &amp; Composition</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2026</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Physics C: E&amp;M</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2026</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Physics C: Mechanics</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2026</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Statistics</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2026</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Chemistry</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2025</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Microeconomics</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2025</span>
+              </li>
+              <li class="flex justify-between gap-4">
+                <span>Computer Science A</span>
+                <span class="text-gray-600 dark:text-gray-400">5/5 | May 2024</span>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">SAT</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Aug 2025</span>
+            </div>
+            <p class="mt-2">Score: 1540</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h4 class="font-semibold text-lg">Duolingo English Test</h4>
+              <span class="text-xs text-gray-600 dark:text-gray-400">May 2025</span>
+            </div>
+            <p class="mt-2">Score: 160</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section id="volunteering" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
+      <h2 class="text-3xl font-bold">Volunteering</h2>
+
+      <div class="mt-10">
+        <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Lego We-Do and Programming CIP Project</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">February 2026 | 50 hours</span>
+            </div>
+            <p class="mt-2">Coordinated and led the project, teaching kids robotics through LEGO and programming through Scratch.</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">4th Piri Reis FTC Tournament</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">November 2025</span>
+            </div>
+            <p class="mt-2">Volunteered as a robot inspector at the tournament, organised by the Fikret Yüksel Foundation.</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Tune Into Joy</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">August 2025 | 40 hours</span>
+            </div>
+            <p class="mt-2">Community involvement project taught socially deprived student groups about music and singing.</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Lego WE-DO Community Involvement Project</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">February 2024 | 15 hours</span>
+            </div>
+            <p class="mt-2">Ran with Lions Vakfı, teaching simple coding through LEGO to socially deprived student groups.</p>
+          </li>
+
+        </ul>
+      </div>
     </section>
 
   </main>
