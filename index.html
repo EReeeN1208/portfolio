@@ -9,6 +9,8 @@
   <script>
     tailwind.config = { darkMode: "media" };
   </script>
+  <script data-goatcounter="https://erenkural.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </head>
 <body class="bg-white text-black dark:bg-neutral-900 dark:text-white antialiased">
 
@@ -20,6 +22,7 @@
         <ul class="flex flex-col sm:flex-row gap-2 sm:gap-5 mt-4 sm:mt-0 list-none p-0 m-0 text-sm">
           <li><a href="#home" class="hover:underline underline-offset-4">Home</a></li>
           <li><a href="#projects" class="hover:underline underline-offset-4">Projects</a></li>
+          <li><a href="#experience" class="hover:underline underline-offset-4">Experience</a></li>
           <li><a href="#music" class="hover:underline underline-offset-4">Music</a></li>
           <li><a href="#publications" class="hover:underline underline-offset-4">Papers &amp; Talks</a></li>
           <li><a href="#awards" class="hover:underline underline-offset-4">Awards &amp; Test Scores</a></li>
@@ -34,18 +37,34 @@
     <!-- Home -->
     <section id="home" class="scroll-mt-24">
       <div class="flex flex-col sm:flex-row gap-8 items-start">
-        <img
-          src="assets/images/eren-portrait.jpg"
-          alt="Eren Kural"
-          class="w-40 h-40 sm:w-48 sm:h-48 object-cover shrink-0">
+        <div class="shrink-0">
+          <img
+            src="assets/images/eren-portrait.jpg"
+            alt="Eren Kural"
+            class="w-40 h-40 sm:w-48 sm:h-48 object-cover">
+          <ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0 text-sm">
+            <li>
+              <a href="https://github.com/EReeeN1208" class="underline underline-offset-4 hover:no-underline">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4 hover:no-underline">
+                Spotify
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/eren-kural-40b5272aa/" class="underline underline-offset-4 hover:no-underline">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
         <div>
           <h1 class="text-3xl font-bold">Eren Kural</h1>
-          <p class="text-gray-600 dark:text-gray-400 mt-1">Incoming Senior at Robert College, Co-Captain of FRC team ARC6014</p>
+          <p class="text-gray-600 dark:text-gray-400 mt-1">Senior at Robert College, Co-Captain of FRC team ARC6014</p>
 
-          <!-- TODO: EXPAND BIO -->
           <p class="mt-6 max-w-2xl">
-            I study at Robert College of Istanbul. I want to study Computer Engineering and Electrical and Electronics Engineering, and I'm keen on coding, building computers, and robotics.
-            <br><br>
             I'm a FIRST Leadership Award Finalist and co-captain of my Robotics Team. I competed at the Houston FIRST Robotics Championship in 2024 and 2025 with my team, and we received the Impact Award twice, in part for two projects I led: The first is DragonScout, an app making FRC scouting easier for small-mid sized teams. It is available on the App Store. The other is Arcinator, the worlds first free, publicly accessible FRC chatbot.
             <br><br>
             I built my first computer when I was 9, and I've since built all the computers used in my parents' architectural office. More recently, I built a guitar amplifier and two CNC machines.
@@ -53,38 +72,16 @@
             I'm also passionate about playing and composing music. Currently, I serve as the head guitarist of the Robert College Orchestra.
             <br><br>
             See below for more details about my projects and music.
+            <br><br>
+            Contact: eren(dot)kural(at)hotmail(dot)com
           </p>
         </div>
-      </div>
-
-      <div class="mt-10">
-        <ul class="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 m-0 text-sm">
-          <li>
-            <a href="https://github.com/EReeeN1208" class="underline underline-offset-4 hover:no-underline">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4 hover:no-underline">
-              Spotify
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/eren-kural-40b5272aa/" class="underline underline-offset-4 hover:no-underline">
-              LinkedIn
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
       <h2 class="text-3xl font-bold">Projects</h2>
-      <p class="text-gray-600 dark:text-gray-400 mt-1">
-        <!---Lorem ipsum dolor sit amet, consectetur adipiscing elit. See more on
-        <a href="https://github.com/EReeeN1208" class="underline underline-offset-4">GitHub</a>.--->
-      </p>
 
       <div class="mt-5r">
         <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
@@ -94,7 +91,23 @@
               <h3 class="font-semibold text-lg">3 Axis CNC Router</h3>
               <span class="text-xs text-gray-600 dark:text-gray-400">August 2026</span>
             </div>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Designed and built a custom 3 axis CNC router and control box from scratch. Equipped with a 750w spindle for wood/light aluminum jobs.</p>
+            <div class="mt-4 flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2">
+              <img src="assets/images/projects/3axisRouter/front.jpg" alt="3 axis CNC router, front" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/side.jpg" alt="3 axis CNC router, side" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/sidefront.jpg" alt="3 axis CNC router, side front" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/xAxis.jpg" alt="3 axis CNC router, X axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/yAxis1.jpg" alt="3 axis CNC router, Y axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/yAxis2.jpg" alt="3 axis CNC router, Y axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/zAxis1.jpg" alt="3 axis CNC router, Z axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/zAxis2.jpg" alt="3 axis CNC router, Z axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/rawParts.jpg" alt="3 axis CNC router, raw parts" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/inConstruction1.jpg" alt="3 axis CNC router, in construction" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/inConstruction2.jpg" alt="3 axis CNC router, in construction" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/additionalPhoto1.jpg" alt="3 axis CNC router, additional photo" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/additionalPhoto2.jpg" alt="3 axis CNC router, additional photo" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/3axisRouter/additionalPhoto3.jpg" alt="3 axis CNC router, additional photo" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+            </div>
             <p class="mt-3 text-sm">
               <a href="https://cad.onshape.com/documents/79704e191795b1d4f31f1f1b/w/a1067c9624c8b593191896d3/e/e75da6a2f01d70fc04d6cb6f?renderMode=0&amp;uiState=6a6f44e6f86a65149ecec004" class="underline underline-offset-4">
                 View on Onshape &#8599;
@@ -107,7 +120,16 @@
               <h3 class="font-semibold text-lg">2 Axis CNC Pen Plotter</h3>
               <span class="text-xs text-gray-600 dark:text-gray-400">June 2026</span>
             </div>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Designed and built a custom 2 axis CNC pen plotter.</p>
+            <div class="mt-4 flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2">
+              <video src="assets/images/projects/2axixPenPlotter/drawing.mp4" autoplay loop muted playsinline class="shrink-0 snap-start w-auto h-64 rounded-lg"></video>
+              <img src="assets/images/projects/2axixPenPlotter/sideFront.jpg" alt="2 axis CNC pen plotter, side front" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/2axixPenPlotter/topDown.jpg" alt="2 axis CNC pen plotter, top down" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/2axixPenPlotter/bottom.jpg" alt="2 axis CNC pen plotter, bottom" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/2axixPenPlotter/controlBox.jpg" alt="2 axis CNC pen plotter, control box" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/2axixPenPlotter/xAxis1.jpg" alt="2 axis CNC pen plotter, X axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/2axixPenPlotter/yAxis1.jpg" alt="2 axis CNC pen plotter, Y axis" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+            </div>
             <p class="mt-3 text-sm">
               <a href="https://cad.onshape.com/documents/368c8b133bf62c444bd6feb7/w/76279ecd67078c0e353e39e9/e/867fe40cc83e4253ae53fd8d?renderMode=0&amp;uiState=6a6f8339f86a65149ecfd935" class="underline underline-offset-4">
                 View on Onshape &#8599;
@@ -133,6 +155,9 @@
               <a href="https://www.youtube.com/watch?v=2cIjbjXMatc" class="underline underline-offset-4 mr-6">
                 Video Demonstration &#8599;
               </a>
+              <a href="https://www.youtube.com/watch?v=AA41dUi1PYI" class="underline underline-offset-4 mr-6">
+                Physics engine evaluation video &#8599;
+              </a>
             </p>
           </li>
 
@@ -141,7 +166,7 @@
               <h3 class="font-semibold text-lg">2W Solid State Guitar Amp</h3>
               <span class="text-xs text-gray-600 dark:text-gray-400">May 2026</span>
             </div>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Designed and built a 2W amp circuit using 2 LM386 IC's and a custom 3d printed chassis.</p>
             <div class="mt-4 flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2">
               <img src="assets/images/projects/2wAmp/frontClosed.jpg" alt="2W amp, front closed" class="shrink-0 snap-start w-64 sm:w-72 h-48 object-cover rounded-lg">
               <img src="assets/images/projects/2wAmp/sideFrontClosed.jpg" alt="2W amp, side view closed" class="shrink-0 snap-start w-64 sm:w-72 h-48 object-cover rounded-lg">
@@ -164,7 +189,7 @@
               <h3 class="font-semibold text-lg">nasARC</h3>
               <span class="text-xs text-gray-600 dark:text-gray-400">October 2025</span>
             </div>
-            <p class="mt-2">Finalist at the NASA Space Apps Challenge Hackathon Istanbul.</p>
+            <p class="mt-2">Participated in the 2026 Nasa Space Apps Hackathon in Istanbul as nasARC and developed BioIndex. Placed finalist (top 10) among 60+ teams.</p>
             <p class="mt-3 text-sm">
               <a href="https://www.spaceappschallenge.org/2025/find-a-team/arc15/?tab=project" class="underline underline-offset-4">
                 View Project &#8599;
@@ -208,7 +233,11 @@
               <h3 class="font-semibold text-lg">ARCade</h3>
               <span class="text-xs text-gray-600 dark:text-gray-400">April 2025</span>
             </div>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Designed an arcade machine around an old monitor for my robotic teams' pit. First project using & learning cad with Onshape.</p>
+            <div class="mt-4 flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2">
+              <img src="assets/images/projects/arcade/arcade1.jpg" alt="ARCade" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+              <img src="assets/images/projects/arcade/arcade2.jpg" alt="ARCade" class="shrink-0 snap-start w-auto h-64 rounded-lg">
+            </div>
           </li>
 
           <li class="p-8">
@@ -217,24 +246,26 @@
               <span class="text-xs text-gray-600 dark:text-gray-400">January 2025</span>
             </div>
             <p class="mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+              DragonScout is an online-first scouting app that solves the organizational issues that medium-sized teams like mine face during scouting, through its interlinked admin panel and scouting pools system. To this day, dragonscout has been used at over 20 FRC events worldwide.
             </p>
             <div class="mt-4 flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2">
-              <img src="assets/images/projects/dragonscout/pool.jpeg" alt="DragonScout scouting pools screen" class="shrink-0 snap-start w-48 sm:w-56 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/interface2.jpeg" alt="DragonScout scouting interface" class="shrink-0 snap-start w-48 sm:w-56 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/data.jpeg" alt="DragonScout data view" class="shrink-0 snap-start w-48 sm:w-56 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/robotsmissed.jpeg" alt="DragonScout missed robots coverage analysis" class="shrink-0 snap-start w-48 sm:w-56 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/pitdata.jpeg" alt="DragonScout pit data screen" class="shrink-0 snap-start w-48 sm:w-56 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/dspanel-home.png" alt="DragonScout admin panel home" class="shrink-0 snap-start w-80 sm:w-96 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
-              <img src="assets/images/projects/dragonscout/dspanel-analysis.png" alt="DragonScout admin panel analysis view" class="shrink-0 snap-start w-80 sm:w-96 h-96 object-contain bg-gray-100 dark:bg-neutral-800 rounded-lg">
+              <img src="assets/images/projects/dragonscout/pool.jpeg" alt="DragonScout scouting pools screen" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/interface2.jpeg" alt="DragonScout scouting interface" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/data.jpeg" alt="DragonScout data view" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/robotsmissed.jpeg" alt="DragonScout missed robots coverage analysis" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/pitdata.jpeg" alt="DragonScout pit data screen" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/dspanel-home.png" alt="DragonScout admin panel home" class="shrink-0 snap-start w-auto h-96 rounded-lg">
+              <img src="assets/images/projects/dragonscout/dspanel-analysis.png" alt="DragonScout admin panel analysis view" class="shrink-0 snap-start w-auto h-96 rounded-lg">
             </div>
             <p class="mt-3 text-sm">
               <a href="https://github.com/ARC6014/DragonScout-Issue-Board/wiki" class="underline underline-offset-4 mr-6">
-                View on GitHub &#8599;
+                Wiki & Getting Started Guide &#8599;
               </a>
-              <a href="https://www.chiefdelphi.com/t/dragonscout-for-rebuilt-online-scouting-with-scouting-pools/513342" class="underline underline-offset-4">
+              <a href="https://www.chiefdelphi.com/t/dragonscout-for-rebuilt-online-scouting-with-scouting-pools/513342" class="underline underline-offset-4 mr-6">
                 View on Chief Delphi &#8599;
+              </a>
+              <a href="https://apps.apple.com/app/dragonscout/id6579583259" class="underline underline-offset-4">
+                View on the App Store &#8599;
               </a>
             </p>
           </li>
@@ -262,31 +293,83 @@
       </div>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
+      <h2 class="text-3xl font-bold">Experience</h2>
+
+      <div class="mt-2">
+        <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">ARC Robotics Club</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Jun 2023 - Present</span>
+            </div>
+            <ul class="mt-3 flex flex-col gap-1.5 list-none p-0 m-0 text-sm">
+              <li class="flex items-center gap-2">
+                <span>Co-Captain</span>
+                <span class="flex-1 border-t border-dotted border-gray-400 dark:border-gray-600"></span>
+                <span class="text-gray-600 dark:text-gray-400 shrink-0">May 2026 - Present</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span>Vice Captain</span>
+                <span class="flex-1 border-t border-dotted border-gray-400 dark:border-gray-600"></span>
+                <span class="text-gray-600 dark:text-gray-400 shrink-0">Jun 2025 - Jun 2026</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span>Programming Member</span>
+                <span class="flex-1 border-t border-dotted border-gray-400 dark:border-gray-600"></span>
+                <span class="text-gray-600 dark:text-gray-400 shrink-0">Jun 2023 - Jun 2025</span>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">RC Orchestra</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Jun 2023 - Present</span>
+            </div>
+            <ul class="mt-3 flex flex-col gap-1.5 list-none p-0 m-0 text-sm">
+              <li class="flex items-center gap-2">
+                <span>Head Guitarist</span>
+                <span class="flex-1 border-t border-dotted border-gray-400 dark:border-gray-600"></span>
+                <span class="text-gray-600 dark:text-gray-400 shrink-0">Sep 2025 - Present</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span>Guitarist</span>
+                <span class="flex-1 border-t border-dotted border-gray-400 dark:border-gray-600"></span>
+                <span class="text-gray-600 dark:text-gray-400 shrink-0">Jun 2023 - Sep 2025</span>
+              </li>
+            </ul>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">IT Technician, UrbAr Office of Urbanization and Architecture</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Jul 2024 - Present</span>
+            </div>
+            <p class="mt-2">Planned, built, and maintained computers in the office.</p>
+          </li>
+
+          <li class="p-8">
+            <div class="flex items-baseline justify-between gap-2 flex-wrap">
+              <h3 class="font-semibold text-lg">Young Talent, Madlen</h3>
+              <span class="text-xs text-gray-600 dark:text-gray-400">Jul 2024 - Aug 2024</span>
+            </div>
+            <p class="mt-2">Developed internal tools for LLM RAG (AI) pipelines. Worked on the teacher and student interfaces.</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
     <!-- Music -->
     <section id="music" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
       <h2 class="text-3xl font-bold">Music</h2>
-      <p class="text-gray-600 dark:text-gray-400 mt-1">
-        <!---Lorem ipsum dolor sit amet, consectetur adipiscing elit, released on
-        <a href="https://open.spotify.com/artist/6qcutE4lIYw5y6N9WiOwvF?si=Mg0P4ei-Qsy7nCMI4-VZ6" class="underline underline-offset-4">Spotify</a>.--->
-      </p>
-
-      <!--
-        Album cover color palettes (user-provided, unordered):
-        Mavi Huzur: #19283B, #6E97AD, #DAE6E6, #97B1B1, #2D477A
-        Katastrofi: #F3F3F3, #000000, #1F1F1F, #514306, #411C02
-        Cıvata:     #FFFFFF, #252F34, #E884B8, #C37099, #A35C7C
-      -->
 
       <div class="mt-5">
-        <!---<h3 class="text-xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2">Releases</h3>--->
-
         <div class="mt-5 flex flex-col gap-5">
 
-          <!--
-            The Lion, the Witch and the Wardrobe: not yet released on Spotify,
-            so this card notes that and links a zip of all tracks instead of a
-            per-track download, sourced from assets/audio/LWAW/LWAW.zip.
-          -->
           <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#FFFFFF;">
             <div
               class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
@@ -321,12 +404,6 @@
             </div>
           </div>
 
-          <!--
-            Card style modeled on Katastrofi's HearNow preview page
-            (https://hearnow.com/preview/kQrO5n%2F1eF6p2aQswemBbQ%3D%3D?cid=100):
-            a blurred, darkened blowup of the album art as an ambient backdrop
-            behind the crisp cover image, rather than a flat palette color.
-          -->
           <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#F3F3F3;">
             <div
               class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
@@ -354,12 +431,6 @@
             </div>
           </div>
 
-          <!--
-            Card style modeled on Mavi Huzur's HearNow preview page
-            (https://hearnow.com/preview/g93nO6h4D8KJkf6DtRF4Bg%3D%3D?cid=100):
-            a blurred, darkened blowup of the album art as an ambient backdrop
-            behind the crisp cover image, rather than a flat palette color.
-          -->
           <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#DAE6E6;">
             <div
               class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
@@ -387,12 +458,6 @@
             </div>
           </div>
 
-          <!--
-            Card style modeled on Cıvata's HearNow preview page
-            (https://hearnow.com/preview/MnQGg5hcIn2YxJp9kV76kw%3D%3D?cid=100):
-            a blurred, darkened blowup of the album art as an ambient backdrop
-            behind the crisp cover image, rather than a flat palette color.
-          -->
           <div class="relative overflow-hidden rounded-lg p-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start" style="color:#FFFFFF;">
             <div
               class="absolute inset-0 -z-20 bg-cover bg-center scale-100 blur-2xl brightness-50"
@@ -426,12 +491,9 @@
 
     <!-- Papers & Talks -->
     <section id="publications" class="mt-20 pt-16 border-t border-gray-300 dark:border-gray-700 scroll-mt-24">
-      <h2 class="text-3xl font-bold">Papers &amp; Talks</h2>
-      <p class="text-gray-600 dark:text-gray-400 mt-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+      <h2 class="text-3xl font-bold">Papers & Talks</h2>
 
-      <div class="mt-10">
+      <div class="mt-2">
         <ul class="flex flex-col gap-5 divide-y divide-gray-300 dark:divide-gray-700 list-none p-0 m-0">
 
           <li class="p-8">
@@ -440,7 +502,7 @@
               <span class="text-xs text-gray-600 dark:text-gray-400">June 2026</span>
             </div>
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Physics C Seminar, Robert College</p>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Presented the process of strumming the strings on an electric, to generating a electrical signal and amplifying that signal as my Physics C final project.</p>
             <p class="mt-3 text-sm">
               <a href="https://docs.google.com/presentation/d/1ubJJ3V-SHMHj1sXeNn7vWwLRbtTEP03tpp8YBXH4xOM/edit?slide=id.p#slide=id.p" class="underline underline-offset-4">
                 Slides &#8599;
@@ -454,7 +516,7 @@
               <span class="text-xs text-gray-600 dark:text-gray-400">May 2026</span>
             </div>
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L11)</p>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Explored different types of physics simulation engines. I then researched the physics, linear algebra and calculus concepts that go into building a physics engine, and built one of my own. See the projects section above for the simulation program.</p>
             <p class="mt-3 text-sm">
               <a href="https://docs.google.com/document/d/1-VeoJuHSQ7GWLWL-izthWQovO3JWefOeVj8q2QPN5bs/edit?tab=t.0#heading=h.dnq08xll55cs" class="underline underline-offset-4">
                 Read &#8599;
@@ -467,8 +529,8 @@
               <h4 class="font-semibold text-lg">Arc6014 Rookie2Rookie</h4>
               <span class="text-xs text-gray-600 dark:text-gray-400">February 2026</span>
             </div>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robotics Team ARC6014</p>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Presentation</p>
+            <p class="mt-2">Presented introductory material to Rookie FRC teams about programming in FRC; including project development, various aspects of robot programming and team & competition culture on behalf of my team, ARC6014.</p>
             <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <img src="assets/images/talks/r2r_1.JPG" alt="Presenting the Rookie2Rookie talk to ARC6014" class="w-full h-auto rounded-lg">
               <img src="assets/images/talks/r2r_2.JPG" alt="Presenting the Rookie2Rookie talk to ARC6014" class="w-full h-auto rounded-lg">
@@ -486,7 +548,7 @@
               <span class="text-xs text-gray-600 dark:text-gray-400">May 2025</span>
             </div>
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L10)</p>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Explored the math behind loudness, pitch, overtones, music theory and guitar construction & techniques. Advised by my L10 Pre-Calc instructor Steven Weissburg</p>
             <p class="mt-3 text-sm">
               <a href="https://docs.google.com/document/d/1hFqUPMfTRxshZHJUc7P3noau8k03qAGIdxbrxo2tPCE/edit?tab=t.0#heading=h.dnq08xll55cs" class="underline underline-offset-4">
                 Read &#8599;
@@ -500,7 +562,7 @@
               <span class="text-xs text-gray-600 dark:text-gray-400">May 2024</span>
             </div>
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Robert College YHP (L9)</p>
-            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="mt-2">Programmed a graphing tool using JavaFX and Compared free fall with and without air drag. Advised by my L9 Physics I instructor J. Morehouse</p>
             <p class="mt-3 text-sm">
               <a href="https://docs.google.com/document/d/1gPLRpDaCyq_K6FvhgpFXhvoLttaNZvNVTQ5jgjHTlVo/edit?tab=t.0" class="underline underline-offset-4">
                 Read &#8599;
